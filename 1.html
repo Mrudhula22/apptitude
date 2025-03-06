@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <style>
+            /* Button styling */
+            button {
+                height: 50px; /* Increased height for better visibility */
+                width: 80%; /* Adjusted button width */
+                border-radius: 20px;
+                font-size: 16px; /* Improved font size for readability */
+                text-align: center;
+                cursor: pointer; /* Change the cursor to pointer on hover */
+                margin-bottom: 10px; /* Added margin to separate buttons */
+                background-color: #e2c2c2; /* Soft background color for buttons */
+                border: none; /* Removed default border */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Added a subtle shadow */
+            }
+
+            /* Container for content */
+            #one {
+                background-color: rgb(230, 217, 217); /* Background color of the container */
+                width: 60%;
+                margin: 5% auto; /* Centering the container */
+                padding: 30px;
+                border-radius: 10px; /* Rounded corners */
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1); /* Adding shadow to the container */
+                text-align: center; /* Centering text inside the container */
+            }
+
+            /* Paragraph style for feedback */
+            #two {
+                font-size: 20px;
+                font-weight: bold;
+                margin-top: 20px;
+                color: black; /* Default color for feedback */
+            }
+
+            /* Heading styling */
+            h2 {
+                color: rgb(63, 71, 68);
+                font-size: 20px; /* Adjusted font size */
+                margin-bottom: 20px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+
+            /* Table styling */
+            table {
+                width: 100%; /* Full width of the container */
+                border-collapse: collapse;
+                margin-bottom: 20px; /* Space below the table */
+            }
+
+            /* Centering the table content */
+            table td {
+                text-align: center;
+                padding: 10px;
+            }
+
+            /* Timer styling */
+            #timer {
+                position: fixed; /* Fixed position at the top-left corner */
+                top: 10px;
+                left: 10px;
+                font-size: 24px;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="timer">45</div> <!-- Timer display in the top-left corner -->
+        
+        <div id="one">
+            <h2>The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:</h2>
+            <table cellpadding="30" cellspacing="60">
+                <tr>
+                    <td><button onclick="correct()">16</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="wrong()">20</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="wrong()">10</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="wrong()">60</button></td>
+                </tr>
+            </table>
+            <p id="two"></p>
+        </div>
+
+        <script>
+            let timeRemaining = 45; // Set initial time to 45 seconds
+            const timerElement = document.getElementById("timer");
+
+            // Function to update the timer every second
+            const timerInterval = setInterval(function() {
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval); // Stop the timer
+                    alert("Time is up!"); // Display the alert when time is up
+                } else {
+                    timerElement.innerHTML = timeRemaining; // Update the timer display
+                    timeRemaining--; // Decrease the time by 1 second
+                }
+            }, 500);
+
+            // Function for correct answer
+            function correct() {
+                let y = document.getElementById("two");
+                y.innerHTML = "ANSWER IS CORRECT";
+                y.style.color = "green";
+            }
+
+            // Function for wrong answer
+            function wrong() {
+                let y = document.getElementById("two");
+                y.innerHTML = "ANSWER IS INCORRECT";
+                y.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
