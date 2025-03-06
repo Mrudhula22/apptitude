@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <style>
+            /* Style for the container */
+            .one {
+                background-color: beige;
+                box-shadow: 20px 30px 20px lavender;
+                
+                transition:0.3s, width 3s; /* Added transition */
+                padding: 30px;
+                border-radius: 10px;
+                width: 300px; /* Added default width */
+            }
+
+            /* Hover effect for the container */
+            .one:hover {
+                
+                width: 90%; /* Changed to percentage for responsiveness */
+            }
+
+            /* Input styling */
+            input {
+                border-radius: 20px;
+                padding: 10px;
+                width: 100%;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                margin-top: 5px;
+                outline: none;
+                
+            }
+
+
+            /* Heading style */
+            h2 {
+                text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+                text-align: center;
+                color: #333;
+                margin-bottom: 20px;
+            }
+
+            /* Button styling */
+            input[type="button"] {
+                background-color: lavender;
+                color: rgb(123, 36, 161);
+                border: none;
+                width: 100%;
+                height: 40px;
+                border-radius: 20px;
+                font-size: 16px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            /* Centering the form */
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+        </style>
+        <script>
+            function log()
+            {
+                let x=document.getElementById("uname").value;
+                let y=document.getElementById("pass").value;
+                if(x==="mrudhula" && y==="221105")
+            {
+                location.href="ques.html";
+            }
+            else
+            {
+                alert("please enter the correct login ids");
+
+            }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="one">
+            <h2>LOGIN PAGE</h2>
+            <form>
+                <table align="center" cellpadding="30" cellspacing="40">
+                    <tr>
+                        <td>ENTER USERNAME: <input type="text" id="uname"></td>
+                    </tr>
+                    <tr>
+                        <td>ENTER PASSWORD: <input type="password" id="pass"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="LOGIN" onclick="log()"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>
