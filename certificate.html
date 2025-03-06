@@ -1,0 +1,88 @@
+<html>
+   <title>certificate</title>
+   <head>
+    <style>
+        h2
+        {
+            color:red;
+        }
+        form
+        {
+            align:center;
+        }
+        .one
+        {
+            width:40%;
+            height:20%;
+            background-color:antiquewhite;
+            color:rgb(3, 14, 10);
+            text-align:center;
+            align-content:center;
+            margin-left:30%;
+        }
+        .two
+        {
+            width:50%;
+            height:60%;
+            background-color:rgb(182, 196, 105);
+            color:rgb(20, 92, 92);
+            text-align:center;
+            align-content:center;
+            margin-left:30%;
+        }
+        button
+        {
+            text-align:center;
+            color:green;
+            margin-left:30%;
+            border-radius:40%
+        }
+    </style>
+    <script>
+        function f1()
+        {
+            let x=document.getElementById("name").value;
+            let y=document.getElementById("na");
+            y.innerHTML=x;
+        }
+        function f2()
+        {
+            window.print();
+        }
+    </script>
+   </head>
+   <body>
+    <div class="one">
+    <form>
+        NAME:<input type="text" id="name" oninput="f1()">
+        <h6>note:please enter the valid name that name will be displayed in the certificate</h6>
+    </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="two">
+        <h3>APTITECH</h3>
+        <h2>CERTIFICATION OF COMPLETION</h2>
+        <h3>QUANTITATIVE APPTITUDE BASICS</h3>
+        <h4>PRESENTED TO</h4>
+        <h3 id="na"></h3>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h5>POVERDERED BY</h5>
+        <h5>APTITECH SOLUTIONS</h5>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div align="center">
+    <button onclick="f2()">DOWNLOAD</button>
+    </div>
+   </body>
+</html>
