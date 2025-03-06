@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AptiTech Solutions</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Full page background gradient */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff0066, #6600cc, #33cc99); /* Vibrant gradient */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column; /* Align content vertically */
+        }
+
+        /* Container with some padding and styling */
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px; /* Space between the heading and button */
+        }
+
+        /* Main heading */
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        /* Tagline */
+        h4 {
+            font-size: 1.8em;
+            font-style: italic;
+            animation: fadeIn 1.5s ease-out 1s forwards;
+        }
+
+        /* Hover effect on the main heading */
+        h1:hover {
+            color: #ffcc00; /* Yellow on hover */
+        }
+
+        /* Hover effect on tagline */
+        h4:hover {
+            color: #ffff00; /* Light yellow on hover */
+        }
+
+        /* Button Styles */
+        button {
+            border-radius: 30px;
+            background-color: #33cc99; /* Greenish background */
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ffcc00; /* Change to yellow on hover */
+            transform: scale(1.1); /* Slightly enlarge the button on hover */
+        }
+
+        button:active {
+            transform: scale(1); /* Button returns to normal size when clicked */
+        }
+
+        /* Centering the button container */
+        .one {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>APTITECH SOLUTIONS</h1>
+        <h4>"Sharpen Your Skills, Ace Your Future!"</h4>
+    </div>
+    
+    <div class="one">
+        <a href="login.html"><button>GET STARTED</button></a>
+    </div>
+</body>
+</html>
