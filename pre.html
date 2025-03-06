@@ -1,0 +1,239 @@
+<html>
+    <head>
+        <title>PRE</title>
+        <style>
+            
+            h1
+            {
+                text-shadow:2px 3px;
+                color:green;
+                text-align: center;
+            }
+            #co
+            {
+                border-radius:20px;
+                color:antiquewhite;
+                color:red;
+                width:90px;
+                height:70px;
+
+            }
+            #res
+            {
+                font-size:80px;
+                color:blue;
+
+            }
+            tr,td
+            {
+                text-indent:40px;
+            }
+            .one
+            {
+                width:60%;
+                height:40%;
+                background-color: aliceblue;
+                text-indent: 90px;
+                margin-bottom: 20px;
+                align-items:center;
+    
+            }
+            button
+            {
+                background-color:#ebefef;
+                width:60%;
+                height:40px;
+                align-items: center;
+                border-radius:10px;
+
+            }
+            button:hover
+            {
+                background-color:beige;
+            }
+            p
+            {
+                text-align:center;
+            }
+            a
+            {
+                text-decoration:none;
+            }
+        </style>
+        <script>
+            var count=0
+            function correct(p) {
+                p.innerHTML = "ANSWER IS CORRECT";
+                p.style.color = "green";  
+                p.style.fontWeight = "bold";
+                
+                count=count+1;
+            }
+
+            function wrong(p) {
+                p.innerHTML = "ANSWER IS INCORRECT";
+                p.style.color = "red";
+                p.style.fontWeight = "normal";
+            }
+           function result()
+           {
+            var message="";
+            if(count==1||count==2||count==3)
+           {
+                message="you are poor";
+
+           }
+           if(count==4||count==5||count==6||count==7)
+           {
+            message="you are good";
+           }
+           if(count==8||count==9||count==10)
+           {
+            message="you are excellent";
+           }
+           let a=document.getElementById("res");
+           a.innerHTML=message;
+           a.style.color=aqua;
+           a.style.fontWeight="bold";
+           a.style.fontSize="70px";
+           a.style.alignItems="center"
+           }
+        </script>
+    </head>
+    <body>
+        <h1>PRE ASSESSMENT TEST</h1>
+        
+        <!-- Question 1 -->
+         <table class="one" align="center">
+            <tr><td>
+        <h2>1. 
+            Statements: No women teacher can play. Some women teachers are athletes.
+            <br>
+            Conclusions:
+            <br>
+            Male athletes can play.
+            <br>
+            Some athletes can play.</h2></td></tr>
+    
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p1'))">Only conclusion I follows</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p1'))">Only conclusion II follow</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p1'))">Either I or II follows</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="correct(document.getElementById('p1'))">Neither I nor II follows</button></td>
+            </tr>
+        </table>
+        <p id="p1"></p>
+
+        <!-- Question 2 -->
+        
+        <table align="center" class="one">
+            <tr><td>
+            <h2>2. 
+                Statements: Some doctors are fools. Some fools are rich.
+                <br>
+                Conclusions:
+                <br>
+                Some doctors are rich.
+                <br>
+                Some rich are doctors.</h2></td></tr>
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p2'))">Only conclusion I follows</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p2'))">Only conclusion II follows</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="wrong(document.getElementById('p2'))">Either I or II follows</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="correct(document.getElementById('p2'))">Neither I nor II follows</button></td>
+            </tr>
+        </table>
+        <p id="p2"></p>
+
+        <!-- Question 3 -->
+        
+        <table class="one" align="center">
+            <tr><td>
+            <h2>3. Find the greatest number that will divide 43, 91, and 183 so as to leave the same remainder in each case.</h2></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p3'))">4</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p3'))">14</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p3'))">45</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p3'))">3</button></td></tr>
+        </table>
+        <p id="p3"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>4. A train running at the speed of 60 km/hr crosses a pole in 9 seconds. What is the length of the train</h2></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p4'))">560</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p4'))">340</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p4'))">56</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p4'))">150</button></td></tr>
+        </table>
+        <p id="p4"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>5.The length of the bridge, which a train 130 metres long and travelling at 45 km/hr can cross in 30 seconds, is:</h2></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p5'))">560</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p5'))">346</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p5'))">245</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p5'))">100</button></td></tr>
+        </table>
+        <p id="p5"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>6.Pointing to a photograph of a boy Suresh said, "He is the son of the only son of my mother." How is Suresh related to that boy?</h2></td></tr>           <tr><td><button onclick="wrong(document.getElementById('p6'))">cousin</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p6'))">father</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p6'))">brother</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p6'))">uncle</button></td></tr>
+        </table>
+        <p id="p6"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>7.   3, 10, 101,?</h2></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p7'))">10202</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p7'))">10000</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p7'))">1600</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p7'))">1</button></td></tr>
+        </table>
+        <p id="p7"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>8.In the following the questions choose the word which best expresses the meaning of the given word.
+                CORPULENT            </h2></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p8'))">guant</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p8'))">obese</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p8'))">guant</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p8'))">emaciated</button></td></tr>
+        </table>
+        <p id="p8"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>9.In the following questions choose the word which is the exact OPPOSITE of the given words.
+                ENORMOUS            </h2></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p9'))">average</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p9'))">soft</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p9'))">tiny</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p9'))">weak</button></td></tr>
+        </table>
+        <p id="p9"></p>
+        <table class="one" align="center">
+            <tr><td>
+            <h2>10.Rahul put his timepiece on the table in such a way that at 6 P.M. hour hand points to North. In which direction the minute hand will point at 9.15 P.M. ?</h2></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p10'))">north-west</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p10'))">south</button></td></tr>
+            <tr><td><button onclick="correct(document.getElementById('p10'))">west</button></td></tr>
+            <tr><td><button onclick="wrong(document.getElementById('p10'))">north-west</button></td></tr>
+        </table>
+        <p id="res"></p>
+        <center>
+        <button onclick="result()" id="co"><a href="main.html">SUBMIT</a></button></center>
+     
+    </body>
+</html>
