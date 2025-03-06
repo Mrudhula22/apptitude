@@ -1,0 +1,320 @@
+<html>
+    <head>
+        <title>Low</title>
+        <style>
+            /* Basic reset */
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            /* Body styles */
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f4f7;
+                color: #333;
+                line-height: 1.6;
+                font-size: 16px;
+                padding: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            /* Container styles */
+            .container {
+                max-width: 1000px;
+                background-color: #fff;
+                border-radius: 8px;
+                padding: 40px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                width: 100%;
+                margin: 20px;
+                transition: all 0.3s ease;
+            }
+
+            /* Hover effect for container */
+            .container:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            }
+
+            /* Header styles */
+            h2, h3 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-weight: 700;
+            }
+
+            h2 {
+                font-size: 28px;
+                color: #2C3E50;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            h3 {
+                font-size: 22px;
+                color: #3498db;
+            }
+
+            /* List styles */
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+
+            ul li {
+                font-size: 18px;
+                margin: 12px 0;
+                padding-left: 24px;
+                position: relative;
+            }
+
+            ul li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #2980B9;
+                font-size: 24px;
+                top: 0;
+            }
+
+            /* Link styles */
+            a {
+                text-decoration: none;
+                color: #3498db;
+                font-size: 18px;
+                transition: color 0.3s ease;
+            }
+
+            a:hover {
+                color: #1abc9c;
+            }
+
+            /* Button styles */
+            button {
+                background-color: #2980B9;
+                color: white;
+                border: none;
+                padding: 12px 24px;
+                font-size: 18px;
+                cursor: pointer;
+                border-radius: 6px;
+                width: 100%;
+                max-width: 200px;
+                transition: all 0.3s ease;
+                margin-top: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            button:hover {
+                background-color: #1abc9c;
+                transform: translateY(-3px);
+            }
+
+            button a {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+
+            button a:hover {
+                color: white;
+            }
+
+            /* Checkbox styling */
+            .checkbox-container {
+                margin: 15px 0;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .checkbox-container input[type="checkbox"] {
+                transform: scale(1.3);
+                margin-right: 10px;
+            }
+
+            /* Responsive styles */
+            @media (max-width: 768px) {
+                .container {
+                    padding: 20px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                button {
+                    width: 100%;
+                }
+
+                ul li {
+                    font-size: 16px;
+                }
+            }
+
+            /* Beautiful background gradient */
+            .container {
+                background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            }
+
+            /* Stylish border and hover effect for links */
+            .link-checkbox-container {
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                margin-bottom: 15px;
+            }
+
+            .link-checkbox-container label {
+                font-size: 18px;
+                margin-left: 10px;
+            }
+
+            .link-checkbox-container a {
+                padding: 5px 10px;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+            }
+
+            .link-checkbox-container a:hover {
+                background-color: #f39c12;
+                color: white;
+            }
+
+            /* Stylish checkboxes */
+            .checkbox-container input[type="checkbox"] {
+                transform: scale(1.5);
+                margin-right: 15px;
+            }
+
+            /* One word improvement for button links */
+            .one {
+                display: inline-block;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2>APPTITUDE PREPARATION</h2>
+            <h3>KEY POINTS</h3>
+            <ul>
+                <li>EARN A CERTIFICATE AFTER COMPLETION</li>
+                <li>AVERAGE TIME TO COMPLETE 40 DAYS</li>
+            </ul>
+            <h2>LOGICAL REASONING MODULE 1</h2>
+            
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="alphaNumericSeries">
+                <label for="alphaNumericSeries"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1376484">ALPHA NUMERIC SERIES</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="bloodRelations">
+                <label for="bloodRelations"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1377699">BLOOD RELATIONS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="calenders">
+                <label for="calenders"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1377698">CALENDERS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="clocks">
+                <label for="clocks"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1377697">CLOCKS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="codingAndDecoding">
+                <label for="codingAndDecoding"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1381368">CODING AND DECODING</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="dataSufficiency">
+                <label for="dataSufficiency"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/118505/offering/1377702">DATA SUFFICIENCY PROBLEMS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="hcfAndLcm">
+                <label for="hcfAndLcm"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/119114/offering/1463095">HCF AND LCM</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="averages">
+                <label for="averages"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/119114/offering/1463096">AVERAGES</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="percentages">
+                <label for="percentages"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/119114/offering/1463098">PERCENTAGES</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="profitAndLoss">
+                <label for="profitAndLoss"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/120291/offering/1463100">PROFIT AND LOSS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="ratioAndProportion">
+                <label for="ratioAndProportion"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/120291/offering/1463099">RATIO AND PROPORTION</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="timeAndWork">
+                <label for="timeAndWork"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/120291/offering/1463103">TIME AND WORK</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="probability">
+                <label for="probability"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/120292/offering/1463105">PROBABILITY</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="timeSpeedAndDistances">
+                <label for="timeSpeedAndDistances"><a href="https://www.naukri.com/code360/guided-paths/aptitude-preparation/content/120292/offering/1463107">TIME SPEED AND DISTANCES</a></label>
+            </div>
+
+            <h2>ENGLISH MODULE</h2>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="synonyms">
+                <label for="synonyms"><a href="https://www.indiabix.com/verbal-ability/synonyms/">SYNONYMS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="antonyms">
+                <label for="antonyms"><a href="https://www.indiabix.com/verbal-ability/antonyms/">ANTONYMS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="spottingErrors">
+                <label for="spottingErrors"><a href="https://www.indiabix.com/verbal-ability/spotting-errors/">SPOTTING ERRORS</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="sentenceCorrection">
+                <label for="sentenceCorrection"><a href="https://www.indiabix.com/verbal-ability/sentence-correction/">SENTENCE CORRECTION</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="paragraphFormation">
+                <label for="paragraphFormation"><a href="https://www.indiabix.com/verbal-ability/paragraph-formation/#google_vignette">PARAGRAPH FORMATION</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="sentenceFormation">
+                <label for="sentenceFormation"><a href="https://www.indiabix.com/verbal-ability/sentence-correction/">SENTENCE FORMATION</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="verbalAnalogies">
+                <label for="verbalAnalogies"><a href="https://www.indiabix.com/verbal-ability/verbal-analogies/#google_vignette">VERBAL-ANALOGIES</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="sentenceImprovement">
+                <label for="sentenceImprovement"><a href="https://www.indiabix.com/verbal-ability/sentence-improvement/">SENTENCE IMPROVEMENT</a></label>
+            </div>
+            <div class="link-checkbox-container">
+                <input type="checkbox" id="oneWordSubstitutes">
+                <label for="oneWordSubstitutes"><a href="https://www.indiabix.com/verbal-ability/one-word-substitutes/">ONE-WORD-SUBSTITUTES</a></label>
+            </div>
+            <div class="one">
+                <button><a href="home.html">SOLVE QUESTIONS</a></button>
+            <button><a href="certificate.html">GET CERTIFICATE</a></button>
+        </div>
+    </body>
+</html>
